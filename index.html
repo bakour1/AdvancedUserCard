@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced User Card</title>
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>
+        order list
+      </h2>
+      <div class="menu">
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+    </header>
+    <div class="search">
+      <div class="content-search">
+        <input type="search" name="s-invoice" placeholder="invoice search">
+        <input type="search" name="s-title" placeholder="search by title">
+        <input type="search" name="s-phone" placeholder="search by phone">
+      </div>
+      <button>search</button>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <input id="invoice" type="checkbox" name="invoice">
+            <label for="invoice">invoice</label>
+          </th>
+          <th>image</th>
+          <th>
+            <span>menu</span>
+            <span class="arrow"></span>
+            <ul>
+              <li>pizza</li>
+              <li>pizza..</li>
+              <li>pizza..</li>
+              <li>pizza..</li>
+            </ul>
+          </th>
+          <th>
+            <span>customer name</span>
+            <span class="arrow"></span>
+            <ul>
+              <li>name1</li>
+              <li>name2</li>
+              <li>name3</li>
+            </ul>
+          </th>
+          <th>quantity</th>
+          <th>
+            <span>amount</span>
+            <span class="arrow"></span>
+            <ul>
+              <li>amount1</li>
+              <li>amount2</li>
+              <li>amount3</li>
+            </ul>
+          </th>
+          <th>
+            <span>order status</span>
+            <span class="arrow"></span>
+            <ul>
+              <li>order1</li>
+              <li>order2</li>
+              <li>order3</li>
+            </ul>
+          </th>
+          <th>
+            <span>phone</span>
+            <span class="arrow"></span>
+            <ul>
+              <li>phone1</li>
+              <li>phone2</li>
+              <li>phone3</li>
+            </ul>
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input id="1150" type="checkbox" name="1150">
+            <label for="1150">&num; 1150</label>
+          </td>
+          <td>
+            <img width="50px" src="https://i.postimg.cc/pT9NHTRN/pizza.png" alt="" />
+          </td>
+          <td>cheese pizza</td>
+          <td>mark willy</td>
+          <td>
+            <input type="number" pattern="[1-9]" value="05">
+          </td>
+          <td>$2.590</td>
+          <td class="confirmed"><span>confirmed</span></td>
+          <td>+123 9856047</td>
+          <td><i class="fas fa-ellipsis-h"></i></td>
+        </tr>
+        <tr>
+          <td>
+            <input id="1151" type="checkbox" name="1151">
+            <label for="1151">&num; 1151</label>
+          </td>
+          <td>
+            <img width="50px" src="https://i.postimg.cc/MZCwzyn9/brger.png" alt="" />
+          </td>
+          <td>big burger</td>
+          <td>mithila zaman</td>
+          <td>
+            <input type="number" pattern="[1-9]" value="03">
+          </td>
+          <td>$1,590</td>
+          <td class="pending"><span>pending</span></td>
+          <td>+123 9856047</td>
+          <td><i class="fas fa-ellipsis-h"></i></td>
+        </tr>
+        <tr>
+          <td>
+            <input id="1152" type="checkbox" name="1152">
+            <label for="1152">&num; 1152</label>
+          </td>
+          <td>
+            <img width="50px" src="https://i.postimg.cc/yd3GGbys/pasta.png" alt="" />
+          </td>
+          <td>chicken pasta</td>
+          <td>siddikur rahman</td>
+          <td>
+            <input type="number" pattern="[1-9]" value="05">
+          </td>
+          <td>$2,590</td>
+          <td class="confirmed"><span>confirmed</span></td>
+          <td>+123 9856047</td>
+          <td><i class="fas fa-ellipsis-h"></i></td>
+        </tr>
+        <tr>
+          <td>
+            <input id="1153" type="checkbox" name="1153">
+            <label for="1153">&num; 1153</label>
+          </td>
+          <td>
+            <img width="50px" src="https://i.postimg.cc/pT9NHTRN/pizza.png" alt="" />
+          </td>
+          <td>chicken pasta</td>
+          <td>siddikur rahman</td>
+          <td>
+            <input type="number" pattern="[1-9]" value="05">
+          </td>
+          <td>$2,590</td>
+          <td class="confirmed"><span>confirmed</span></td>
+          <td>+123 9856047</td>
+          <td><i class="fas fa-ellipsis-h"></i></td>
+        </tr>
+        <tr>
+          <td>
+            <input id="1154" type="checkbox" name="1154">
+            <label for="1154">&num; 1154</label>
+          </td>
+          <td>
+            <img width="50px" src="https://i.postimg.cc/Fs04z7cN/brger2.png" alt="" />
+          </td>
+          <td>big burger</td>
+          <td>mithila zaman</td>
+          <td>
+            <input type="number" pattern="[1-9]" value="03">
+          </td>
+          <td>$1,590</td>
+          <td class="pending"><span>pending</span></td>
+          <td>+123 9856047</td>
+          <td><i class="fas fa-ellipsis-h"></i></td>
+        </tr>
+        <tr>
+          <td>
+            <input id="1155" type="checkbox" name="1155">
+            <label for="1155">&num; 1155</label>
+          </td>
+          <td>
+            <img width="50px" src="https://i.postimg.cc/yd3GGbys/pasta.png" alt="" />
+          </td>
+          <td>chicken pasta</td>
+          <td>siddikur rahman</td>
+          <td>
+            <input type="number" pattern="[1-9]" value="05">
+          </td>
+          <td>$2,590</td>
+          <td class="confirmed"><span>confirmed</span></td>
+          <td>+123 9856047</td>
+          <td><i class="fas fa-ellipsis-h"></i></td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <p>showing <span>1-30</span>/ <span>150</span>results</p>
+      <ul>
+        <li><a href="#">previous</a></li>
+        <li class="active"><a href="#" class="active">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">next</a></li>
+      </ul>
+    </footer>
+  </div>
+
+</body>
+
+</html>
