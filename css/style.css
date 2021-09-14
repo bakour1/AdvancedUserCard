@@ -9,20 +9,24 @@
 }
 
 :root {
-  --bg-body: #F0F1F3;
-  --bg-left-btn: #40399E;
-  --bg-right-btn: #7623A0;
-  --bg-right-grid: #64E4FF;
+  --bg-body: #f0f1f3;
+  --bg-left-btn: #40399e;
+  --bg-right-btn: #7623a0;
+  --bg-right-grid: #64e4ff;
   --bg-container: #fff;
-  --bg-search: #F0F1F3;
-  --bg-img: #EDEEF0;
-  --bg-confirmed: #2CE5C0;
-  --bg-pending: #FFB74D;
-  --bg-border-head: #E8E8E8;
+  --bg-search: #f0f1f3;
+  --bg-img: #edeef0;
+  --bg-confirmed: #2ce5c0;
+  --bg-pending: #ffb74d;
+  --bg-border-head: #e8e8e8;
   --bg-border: #eee;
   --c-black: #000;
   --c-gry: #777;
-  --bg-linier: linear-gradient(to right, var(--bg-left-btn), var(--bg-right-btn));
+  --bg-linier: linear-gradient(
+    to right,
+    var(--bg-left-btn),
+    var(--bg-right-btn)
+  );
 }
 
 /* ========================= */
@@ -46,7 +50,7 @@ tr {
 body {
   font-family: "Titillium Web", sans-serif;
   max-width: 100vw;
-  min-width: 466px;
+  min-width: 500px;
   min-height: 100vh;
   padding-top: 1rem;
   background-color: var(--bg-body);
@@ -131,31 +135,31 @@ html {
   gap: 1.1rem;
 }
 
-.search .content-search>input {
+.search .content-search > input {
   background-color: var(--bg-search);
   font-size: 1rem;
   font-weight: 600;
   text-transform: capitalize;
 }
 
-.search .content-search>input::placeholder {
+.search .content-search > input::placeholder {
   font-size: inherit;
   font-weight: inherit;
   text-transform: inherit;
 }
 
-.search .content-search>input:nth-of-type(1) {
+.search .content-search > input:nth-of-type(1) {
   flex: 0.5;
 }
 
-.search .content-search>input:nth-of-type(2),
-.search .content-search>input:nth-of-type(3) {
+.search .content-search > input:nth-of-type(2),
+.search .content-search > input:nth-of-type(3) {
   flex: 1;
 }
 
-.search .content-search>input,
-.search>button {
-  padding: .9375rem;
+.search .content-search > input,
+.search > button {
+  padding: 0.9375rem;
   outline: none;
   border: none;
 }
@@ -170,10 +174,9 @@ html {
 
 /* ===========table=========== */
 
-
 table thead th {
-  border-bottom: 2px solid var(--bg-border-head);
-  padding-bottom: .9375rem;
+  border-bottom: 0.125rem solid var(--bg-border-head);
+  padding-bottom: 0.9375rem;
   text-transform: capitalize;
   font-size: 1rem;
   font-weight: 600;
@@ -187,11 +190,11 @@ table thead th span {
 }
 
 table thead th span.arrow {
-  margin-top: .625rem;
-  margin-left: .625rem;
+  margin-top: 0.625rem;
+  margin-left: 0.625rem;
   width: 0;
   height: 0;
-  border: .3125rem solid transparent;
+  border: 0.3125rem solid transparent;
   border-top-color: #000;
 }
 
@@ -214,20 +217,20 @@ table thead th ul {
 
 table thead th ul li {
   background-color: var(--bg-search);
-  padding: .6rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   width: 100%;
-  border-bottom: 2px solid var(--bg-container);
+  border-bottom: 0.125rem solid var(--bg-container);
 }
 
 table thead th:hover ul {
-  height: 200px;
+  height: 12.5rem;
 }
 
 /* ------------ */
 
 table tbody td {
-  padding-block: .5rem;
-  border-top: .08rem solid var(--bg-border);
+  padding-block: 0.5rem;
+  border-top: 0.08rem solid var(--bg-border);
   color: var(--c-gry);
   font-weight: 600;
   font-size: 1rem;
@@ -247,14 +250,11 @@ table tbody input[type="checkbox"] {
   appearance: none;
 }
 
-
-
-
 table thead input[type="checkbox"]::before,
 table tbody input[type="checkbox"]::before {
-  content: '';
-  width: .8rem;
-  height: .8rem;
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
   border: 1px solid var(--c-gry);
   position: absolute;
   top: 50%;
@@ -264,11 +264,11 @@ table tbody input[type="checkbox"]::before {
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
   -o-transform: translate(0%, -50%);
-  border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  border-radius: 0.1875rem;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -ms-border-radius: 0.1875rem;
+  -o-border-radius: 0.1875rem;
 }
 
 table thead input[type="checkbox"]::before {
@@ -282,12 +282,12 @@ table thead input[type="checkbox"]::before {
 table thead input[type="checkbox"]:checked::before,
 table tbody input[type="checkbox"]:checked::before {
   background: var(--bg-linier);
-  box-shadow: 2px 2px 10px 0px var(--bg-left-btn);
+  box-shadow: 0.125rem 0.125rem 0.625rem 0px var(--bg-left-btn);
 }
 
 /* -----td > img------ */
 table tbody td img {
-  padding: .3rem;
+  padding: 0.3rem;
   background-color: var(--bg-img);
 }
 
@@ -298,7 +298,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input[type=number] {
+input[type="number"] {
   /*Firefox*/
   -moz-appearance: textfield;
   /*public*/
@@ -308,11 +308,11 @@ input[type=number] {
   text-align: center;
   outline: none;
   border: 2px solid var(--bg-border-head);
-  border-radius: .25rem;
-  -webkit-border-radius: .25rem;
-  -moz-border-radius: .25rem;
-  -ms-border-radius: .25rem;
-  -o-border-radius: .25rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
 }
 
 /* ------------------------- */
@@ -320,7 +320,7 @@ table tbody td.pending span,
 table tbody td.confirmed span {
   display: inline-block;
   width: 6.25rem;
-  padding: .4rem .9rem;
+  padding: 0.4rem 0.9rem;
   color: var(--bg-container);
 }
 
@@ -345,31 +345,31 @@ footer {
   text-transform: capitalize;
 }
 
-footer p>span {
-  margin-inline: .3125rem;
+footer p > span {
+  margin-inline: 0.3125rem;
 }
 
 footer ul {
   display: flex;
   flex-flow: wrap row;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 
-footer ul li:nth-child(n+2):nth-child(-n+5) {
+footer ul li:nth-child(n + 2):nth-child(-n + 5) {
   width: 2.5rem;
   height: 2.5rem;
-  line-height: calc(2.5rem - .125rem);
+  line-height: calc(2.5rem - 0.125rem);
   text-align: center;
-  border: .125rem solid var(--bg-border-head);
-  border-radius: .2rem;
-  -webkit-border-radius: .2rem;
-  -moz-border-radius: .2rem;
-  -ms-border-radius: .2rem;
-  -o-border-radius: .2rem;
+  border: 0.125rem solid var(--bg-border-head);
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
 }
 
-footer>ul>li.active {
+footer > ul > li.active {
   background-color: var(--bg-left-btn);
   color: #fff;
   border: none !important;
